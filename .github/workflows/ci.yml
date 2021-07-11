@@ -26,8 +26,10 @@ jobs:
         run: npm run lint
 
       - name: Check types
-        if: ${{ always() && steps.deps.outcome == 'success' }}
+        if: always() && steps.deps.outcome == 'success'*
+        id: types
         run: npm run check-types
 
       - name: Run tests
+        if: steps.types.outcome == 'success'
         run: npm run test-only
