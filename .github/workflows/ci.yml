@@ -31,5 +31,5 @@ jobs:
         run: npm run check-types
 
       - name: Run tests
-        if: steps.types.outcome == 'success'
+        if: always() && steps.types.outcome == 'success'
         run: npm run test-only
