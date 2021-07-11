@@ -25,7 +25,7 @@
   "homepage": "https://github.com/ES-Community/bot#readme",
   "dependencies": {
     "cron": "^1.8.2",
-    "discord.js": "^12.5.3",
+    "discord.js": "^13.0.0-dev.d433fe8.1626004976",
     "dotenv": "^10.0.0",
     "emoji-regex": "^9.2.2",
     "got": "^11.8.2",
